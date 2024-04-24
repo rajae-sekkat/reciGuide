@@ -1,0 +1,89 @@
+/* Styles pour le conteneur de la page d'accueil */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('../images/backgound.jpg'); /* Chemin vers votre image de fond */
+    background-size: cover;
+    color: #fff; /* Couleur du texte */
+  }
+  
+  /* Styles pour la barre de navigation */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 5px;
+    position: fixed;
+    top: 0;
+    background-color: rgba(153, 152, 152, 0.5); /* Fond semi-transparent */
+  }
+  
+  .logo {
+  display: flex;
+  align-items: center; /* Centre le contenu verticalement */
+}
+
+  
+  .logo img{
+    width: 170px; /* Largeur de votre logo */
+    height: 70px; /* Hauteur de votre logo */
+    margin-left: 30px; /* Marge à droite pour séparer le logo du texte */
+  }
+  
+  .about ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .about ul li {
+    margin-right: 100px;
+    align-items: center;
+    cursor: pointer;
+    font-size: large;
+    
+  }
+
+
+  
+  .Login-button {
+    background-color: #6fd09c;
+    color: #000;
+    border: none;
+    padding: 10px 10px;
+    font-size: 18px;
+    font-weight:bolder;
+    cursor: pointer;
+    margin-right: 30px;
+    border-radius: 5%;
+  }
+  .Profile-button {
+    background-color: #6fd09c;
+    color: #000;
+    border: none;
+    padding: 10px 10px;
+    font-size: 18px;
+    font-weight:bolder;
+    cursor: pointer;
+    margin-right: 20px;
+    border-radius: 5%;
+  }
+  
+  /* Styles pour le contenu principal */
+  .main-content {
+    text-align: center;
+  }
+  
+  .slogan {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .description {
+    font-size: 25px;
+  }
+  
