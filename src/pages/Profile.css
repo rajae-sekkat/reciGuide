@@ -1,5 +1,4 @@
-/* Styles pour le conteneur de la page d'accueil */
-.about-container {
+.profile-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,7 +9,7 @@
     color: #fff; /* Couleur du texte */
   }
   
-  /* Styles pour la barre de navigation */
+  
   .navbar {
     display: flex;
     justify-content: space-between;
@@ -22,16 +21,21 @@
     background-color: rgba(153, 152, 152, 0.5); /* Fond semi-transparent */
   }
   
-  .logo {
-  display: flex;
-  align-items: center; /* Centre le contenu verticalement */
-}
-
-  
   .logo img{
     width: 170px; /* Largeur de votre logo */
     height: 70px; /* Hauteur de votre logo */
     margin-left: 30px; /* Marge à droite pour séparer le logo du texte */
+  }
+  
+  
+  .nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li {
+    cursor: pointer;
   }
   
   .about ul {
@@ -72,5 +76,51 @@
     border-radius: 5%;
   }
   
-
+  .Profile-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Utilisez la hauteur de la vue pour centrer verticalement */
+  }
+  
+  .Profile-box {
+    background-color: rgba(255, 255, 255, 0.4); /* Fond transparent */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Ombre */
+    text-align: center; /* Centrer le contenu horizontalement */
+  }
+  
+  .Profile-box h2 {
+    margin-bottom: 20px;
+    font-size: 40px;
+  }
+  
+  .Profile-box input {
+    width: 90%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .Profile-box button {
+    width: 50%;
+    padding: 10px;
+    background-color: #6fd09c;
+    color: black;
+    font-size: large;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .Profile-box p {
+    margin-top: 10px;
+    text-align: center;
+    color: #000;
+    font-size: large;
+    cursor: pointer;
+  }
+  
   

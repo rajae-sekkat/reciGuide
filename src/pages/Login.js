@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import './Login.css'; // Import du fichier de styles CSS pour cette page
 import logo from '../images/logo.png';
 import { useNavigate } from 'react-router-dom';
+import { signInWithEmailAndPassword } from "firebase/auth"; // Importez la méthode signInWithEmailAndPassword
+import { auth } from '../firebase'; 
 
 // Composant fonctionnel Login
 function Login() {
@@ -9,9 +11,14 @@ function Login() {
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    // Gérer la soumission du formulaire ici
+    try {
+      await signInWithEmailAndPassword(auth, email, password); // Utilisez signInWithEmailAndPassword de firebase/auth avec l'objet auth
+      navigate('/personalize'); // Rediriger l'utilisateur vers la page d'accueil après la connexion réussie
+    } catch (error) {
+      console.error(error.message);
+    }
   };
 
   const handleSignupClick = () => {
@@ -23,14 +30,14 @@ function Login() {
       {/* Barre de navigation */}
       <div className="navbar">
         <div className="logo">
-          <img src={logo} alt="Logo de votre application" />
+          <img src={logo} alt="" />
         </div>
         <div className="about">
           <ul className="nav-links">
             <li onClick={() => navigate('/home')}>Home</li>
+            <li onClick={() => navigate('/about')}>About</li>
             <li onClick={() => navigate('/explore')}>Explore</li>
             <li onClick={() => navigate('/personalize')}>Personalize</li>
-            <li onClick={() => navigate('/about')}>About</li>
             <li onClick={() => navigate('/contact')}>Contact</li>
           </ul>
         </div>

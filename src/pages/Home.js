@@ -17,15 +17,15 @@ function Home() {
         <div className="about">
         <ul className="nav-links">
           <li onClick={() => navigate('/home')}>Home</li>
+          <li onClick={() => navigate('/about')}>About</li>
           <li onClick={() => navigate('/explore')}>Explore</li>
           <li onClick={() => navigate('/personalize')}>Personalize</li>
-          <li onClick={() => navigate('/about')}>About</li>
           <li onClick={() => navigate('/contact')}>Contact</li>
         </ul>
         </div>
         <div className="about">
         <button className="Login-button" onClick={() => navigate('/Login')}>Login</button>
-        <button className="Profile-button">Profile</button>
+        <button className="Profile-button" onClick={() => navigate('/Profile')}>Profile</button>
         </div>
       </div>
       
@@ -34,7 +34,7 @@ function Home() {
         <div className="slogan">Discover delicious meals</div>
         <p className="description">Find personalized recipes that fit your preferences and lifestyle.</p>
         <div className="about">
-        <button className="Login-button">Explore</button>
+        <button className="Login-button" onClick={() => navigate('/explore')}>Explore</button>
         </div>
       </div>
     </div>
