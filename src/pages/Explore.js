@@ -48,7 +48,7 @@ function Explore() {
                 </div>
                 <div className="about">
                     <button className="Login-button" onClick={() => navigate('/Login')}>Login</button>
-                    <button className="Profile-button">Profile</button>
+                    <button className="Profile-button" onClick={() => navigate('/Profile')}>Profile</button>
                 </div>
             </div>
             <div className="search-bar">

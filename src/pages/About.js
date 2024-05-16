@@ -32,11 +32,11 @@ function About() {
             {/* Contenu de la page */}
             <div className="about-container">
 
-                <h1 className="about-text">Dive into Flavo : Uncover the Culinary World with Us</h1>
+                <h1 className="about-text">Dive into Flavor : Uncover the Culinary World with Us</h1>
                 
-                <p className="about-text">Welcome to Discover Delicious, your ultimate destination to explore a world of flavors. Our platform offers an innovative culinary experience, allowing you to discover, create, and savor an endless variety of meals. With our exploration feature, you can search and uncover new recipes, popular dishes, and unique creations. Furthermore, our meal composition tool enables you to customize your meals by selecting your favorite ingredients, while our calorie counter helps you maintain a balanced diet. At Discover Delicious, we are committed to providing you with an exceptional culinary journey, where every dish is an adventure in itself.</p>
+                <p className="about-text1">Welcome to Discover Delicious, your ultimate destination to explore a world of flavors. Our platform offers an innovative culinary experience, allowing you to discover, create, and savor an endless variety of meals. With our exploration feature, you can search and uncover new recipes, popular dishes, and unique creations. Furthermore, our meal composition tool enables you to customize your meals by selecting your favorite ingredients, while our calorie counter helps you maintain a balanced diet. At Discover Delicious, we are committed to providing you with an exceptional culinary journey, where every dish is an adventure in itself.</p>
 
-                <h1 className="about-text">Discover our services</h1>
+                <h1 className="about-text">Our services</h1>
 
                 {/* Services */}
                 <div className="services-container">
