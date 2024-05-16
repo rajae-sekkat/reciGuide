@@ -1,0 +1,356 @@
+* {
+  list-style: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.div-container {
+  background-image: url(../assets/cook.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.titre {
+  margin-top: 120px;
+  background-color: #ffffff63;
+  margin-top: 5.3%;
+}
+.logo1 {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 43px;
+  left: 50%;
+  width: 100%;
+  height: 120px;
+  background-image: url(../assets/trio.png);
+  background-position: center;
+  background-size: contain;
+}
+
+#ood {
+  font-weight: 600;
+  color: rgb(97, 11, 43);
+  animation: appear 0.8s 1s ease-in-out backwards;
+}
+#ood2 {
+  font-weight: 600;
+  color: rgb(30, 121, 18);
+  animation: appear 0.8s 1.5s ease-in-out backwards;
+}
+#good {
+  position: relative;
+  display: flex;
+  font-size: 4rem;
+  margin: auto;
+  width: fit-content;
+}
+#good2 {
+  position: relative;
+  left: 50px;
+  display: flex;
+  font-size: 4rem;
+  margin: auto;
+  width: fit-content;
+}
+
+#g {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font-weight: 800;
+  font-size: 4rem;
+  left: -50px;
+  top: -13px;
+  color: rgb(30, 121, 18);
+  transform: rotateZ(0deg);
+  animation: animletter 0.8s 0.5s ease-in-out backwards;
+}
+
+#f {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font-weight: 800;
+  font-size: 4rem;
+  left: -40px;
+  top: -13px;
+  color: rgb(97, 11, 43);
+  transform: rotateZ(0deg);
+  animation: animletter 0.8s 1s ease-in-out backwards;
+}
+
+@keyframes animletter {
+  0% {
+    opacity: 0;
+    left: -250px;
+    transform: rotateZ(-360deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+    left: -50px;
+    opacity: 1;
+  }
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.group {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px auto;
+  width: fit-content;
+}
+
+.food {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 10px;
+  width: 250px;
+  height: fit-content;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(177, 172, 172);
+  border-radius: 10px;
+  box-shadow: 8px 8px rgba(28, 38, 38, 0.7);
+}
+
+#vegetables,
+#vegetables option {
+  background-color: rgba(31, 214, 135, 0.6);
+}
+
+#fruits,
+#fruits option {
+  background-color: rgb(208, 76, 95, 0.6);
+}
+#dishes,
+#dishes option {
+  background-color: rgb(214, 31, 196, 0.6);
+}
+#seafood,
+#seafood option {
+  background-color: rgb(31, 144, 214, 0.6);
+}
+#drinks,
+#drinks option {
+  background-color: rgb(133, 121, 223, 0.6);
+}
+#cereals,
+#cereals option {
+  background-color: rgb(214, 171, 31, 0.6);
+}
+#meat,
+#meat option {
+  background-color: rgb(158, 95, 43, 0.6);
+}
+#condiments,
+#condiments option {
+  background-color: rgb(158, 43, 43, 0.6);
+}
+
+label {
+  width: fit-content;
+  height: fit-content;
+  font-size: 1.2rem;
+  padding: 20px 0 5px 0;
+  color: white;
+}
+
+select {
+  width: fit-content;
+  height: fit-content;
+  font-size: 1.2rem;
+  padding: 5px;
+  border: 3px solid transparent;
+  border-radius: 10px;
+  background-color: transparent;
+  box-shadow: -3px 2px 2px 2px rgb(28, 38, 38);
+  color: white;
+}
+
+#vegetablesQuantity,
+#fruitsQuantity,
+#meatQuantity,
+#drinksQuantity,
+#dishesQuantity,
+#cerealsQuantity,
+#seafoodQuantity,
+#condimentsQuantity {
+  margin-top: 0px;
+}
+
+#totalAll {
+  display: flex;
+  margin: auto;
+  padding: 10px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  width: fit-content;
+  height: fit-content;
+  background-color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  cursor: pointer;
+  border-radius: 15px;
+  box-shadow: 3px 2px 2px 2px rgb(28, 38, 38);
+}
+#totalAll:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+#total1,
+#total2,
+#total3,
+#total4,
+#total5,
+#total6,
+#total7,
+#total8 {
+  width: fit-content;
+  height: fit-content;
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  color: white;
+  background-color: rgb(83, 87, 86, 0.3);
+}
+
+#total1:hover,
+#total2:hover,
+#total3:hover,
+#total4:hover,
+#total5:hover,
+#total6:hover,
+#total7:hover,
+#total8:hover {
+  background-color: rgb(83, 87, 86, 0.8);
+}
+
+#text1,
+#text2,
+#text3,
+#text4,
+#text5,
+#text6,
+#text7,
+#text8 {
+  width: 70%;
+  height: fit-content;
+  text-align: center;
+  border-radius: 15px;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  padding: 10px;
+  transition: 0.4s ease-in;
+  color: white;
+}
+#textAll {
+  display: flex;
+  margin: 10px auto;
+  color: black;
+  width: fit-content;
+  height: fit-content;
+  padding: 10px;
+  text-align: center;
+  border-radius: 15px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  transition: 0.4s ease-in;
+}
+
+.moyenne {
+  display: grid;
+  margin: 0;
+  width: 90%;
+  height: fit-content;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "act sed"
+    " ha hs"
+    " fa fs";
+  grid-gap: 1px;
+  background-color: rgba(245, 245, 220, 0.8);
+  padding: 5px;
+  margin: auto;
+}
+.act,
+.sed,
+.fs,
+.fa,
+.ha,
+.hs {
+  display: flex;
+  border: solid 2px black;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+}
+
+.calnec {
+  display: block;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 5px;
+  text-align: center;
+  padding: 10px;
+  font-weight: 700;
+  color: black;
+  font-size: 1rem;
+  background-color: rgba(245, 245, 220, 0.8);
+}
+
+.act {
+  grid-area: act;
+  font-weight: 700;
+}
+.sed {
+  grid-area: sed;
+  font-weight: 700;
+}
+.ha {
+  grid-area: ha;
+  font-size: 1rem;
+}
+.hs {
+  grid-area: hs;
+  font-size: 1rem;
+}
+.fa {
+  grid-area: fa;
+  font-size: 1rem;
+}
+.fs {
+  grid-area: fs;
+  font-size: 1rem;
+}
+
+/*media*/
+
+@media screen and (max-width: 1210px) {
+  .group {
+    display: block;
+    margin: auto;
+  }
+  .food {
+    margin: 20px;
+    width: 90vw;
+  }
+  body {
+    background-position: right;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+}

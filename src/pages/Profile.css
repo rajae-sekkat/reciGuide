@@ -6,7 +6,7 @@
     height: 100vh;
     background-image: url('../images/background3.jpg'); /* Chemin vers votre image de fond */
     background-size: cover;
-    color: #fff; /* Couleur du texte */
+    color: #000; /* Couleur du texte */
   }
   
   

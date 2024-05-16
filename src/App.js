@@ -4,7 +4,9 @@ import About from './pages/About';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Profile from './pages/Profile';
-
+import Explore from './pages/Explore';
+import RecipeDetails from './pages/RecipeDetails';
+import CalorieCalculator from './pages/calculateTotalCal';
 
 
 
@@ -21,6 +23,9 @@ function App() {
         <Route path="/Login" element={ <Login/> } />
         <Route path="/Signup" element={ <Signup/> } />
         <Route path="/Profile" element={ <Profile/> } />
+        <Route path="/Explore" element={ <Explore/> } />
+        <Route path="/recipe/:id" element={ <RecipeDetails/> } />
+        <Route path="/CalorieCalculator" element={ <CalorieCalculator/> } />
   
         
       </Routes>

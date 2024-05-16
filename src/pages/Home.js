@@ -7,6 +7,8 @@ import { useNavigate } from 'react-router-dom';
 // Composant fonctionnel Home
 function Home() {
     let navigate = useNavigate();
+
+    
   return (
     <div className="home-container">
       {/* Barre de navigation */}
@@ -20,7 +22,9 @@ function Home() {
           <li onClick={() => navigate('/about')}>About</li>
           <li onClick={() => navigate('/explore')}>Explore</li>
           <li onClick={() => navigate('/personalize')}>Personalize</li>
+          <li onClick={() => navigate('/CalorieCalculator')}>Your plate</li>
           <li onClick={() => navigate('/contact')}>Contact</li>
+          
         </ul>
         </div>
         <div className="about">
