@@ -27,11 +27,12 @@ function Profile() {
         </div>
         <div className="about">
         <ul className="nav-links">
-          <li onClick={() => navigate('/home')}>Home</li>
+        <li onClick={() => navigate('/home')}>Home</li>
           <li onClick={() => navigate('/about')}>About</li>
           <li onClick={() => navigate('/explore')}>Explore</li>
           <li onClick={() => navigate('/personalize')}>Personalize</li>
-          <li onClick={() => navigate('/contact')}>Contact</li>
+          <li onClick={() => navigate('/CalorieCalculator')}>Your plate</li>
+          <li onClick={() => navigate('/contact')}>Identify</li>
         </ul>
         </div>
         <div className="about">

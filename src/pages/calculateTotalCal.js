@@ -10,8 +10,6 @@ function CalculateTotalCal() {
   let navigate = useNavigate();
 
 
-  
-
   // Définition des données (à importer de `index2.js` dans une version finale)
 const vegetables = [ ["tomate", 17], ["courgette", 18], ["poireau", 61], ["carotte", 41],
 ["oignon", 40], ["navet", 28], ["poivron", 20], ["endive", 17],
@@ -163,12 +161,12 @@ const quantity = [ 0, 5, 10, 15, 20, 25, 50, 75, 80, 100, 150, 200, 250, 300, 35
       </div>
         <div className="about">
         <ul className="nav-links">
-          <li onClick={() => navigate('/home')}>Home</li>
-          <li onClick={() => navigate('/about')}>About</li>
-          <li onClick={() => navigate('/explore')}>Explore</li>
-          <li onClick={() => navigate('/personalize')}>Personalize</li>
-          <li onClick={() => navigate('/CalorieCalculator')}>Your plate</li>
-          <li onClick={() => navigate('/contact')}>Contact</li>
+        <li onClick={() => navigate('/home')}>Home</li>
+        <li onClick={() => navigate('/about')}>About</li>
+        <li onClick={() => navigate('/explore')}>Explore</li>
+        <li onClick={() => navigate('/personalize')}>Personalize</li>
+        <li onClick={() => navigate('/CalorieCalculator')}>Compose</li>
+        <li onClick={() => navigate('/contact')}>Identify</li>
           
         </ul>
         </div>

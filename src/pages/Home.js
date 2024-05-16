@@ -22,8 +22,8 @@ function Home() {
           <li onClick={() => navigate('/about')}>About</li>
           <li onClick={() => navigate('/explore')}>Explore</li>
           <li onClick={() => navigate('/personalize')}>Personalize</li>
-          <li onClick={() => navigate('/CalorieCalculator')}>Your plate</li>
-          <li onClick={() => navigate('/contact')}>Contact</li>
+          <li onClick={() => navigate('/CalorieCalculator')}>Compose</li>
+          <li onClick={() => navigate('/contact')}>Identify</li>
           
         </ul>
         </div>
