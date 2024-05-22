@@ -7,7 +7,7 @@ import Profile from './pages/Profile';
 import Explore from './pages/Explore';
 import RecipeDetails from './pages/RecipeDetails';
 import CalorieCalculator from './pages/calculateTotalCal';
-import Personalize from './pages/personalize';
+import Personalize from './pages/personalize1';
 
 
 

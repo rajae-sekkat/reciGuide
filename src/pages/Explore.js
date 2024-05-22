@@ -15,7 +15,7 @@ function Explore() {
     }, []);
 
     const fetchRecipes = async () => {
-        const apiKey = "f48e5b59a6d24a49a378f0f24ec6f767";
+        const apiKey = "5c8f142be8db40f4af3d25205f399330";
         const url = `https://api.spoonacular.com/recipes/complexSearch?apiKey=${apiKey}&query=${query}`;
         try {
             const response = await axios.get(url);
