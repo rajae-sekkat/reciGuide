@@ -7,6 +7,7 @@ import Profile from './pages/Profile';
 import Explore from './pages/Explore';
 import RecipeDetails from './pages/RecipeDetails';
 import CalorieCalculator from './pages/calculateTotalCal';
+import Personalize from './pages/personalize';
 
 
 
@@ -26,6 +27,7 @@ function App() {
         <Route path="/Explore" element={ <Explore/> } />
         <Route path="/recipe/:id" element={ <RecipeDetails/> } />
         <Route path="/CalorieCalculator" element={ <CalorieCalculator/> } />
+        <Route path="/personalize" element={ <Personalize/> } />
   
         
       </Routes>
