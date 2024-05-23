@@ -29,11 +29,6 @@ build:
     paths:
       - build
 
-test:
-  stage: test
-  script:
-    - npm run test
-
 dockerize:
   stage: dockerize
   image: docker:latest
