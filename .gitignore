@@ -21,7 +21,3 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-# Ignore the model file
-/api/best_model_3class.hdf5
-/api/images
