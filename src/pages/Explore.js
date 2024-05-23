@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import axios from 'axios';
 import './Explore.css'; // Assurez-vous d'importer le nouveau fichier CSS ici
 import { useNavigate } from 'react-router-dom';
@@ -10,12 +10,8 @@ function Explore() {
     const [recipes, setRecipes] = useState([]);
     const navigate = useNavigate();
 
-    useEffect(() => {
-        fetchRecipes(); // Charge initialement des recettes par défaut
-    }, []);
-
-    const fetchRecipes = async () => {
-        const apiKey = "5c8f142be8db40f4af3d25205f399330";
+    const fetchRecipes = useCallback(async () => {
+        const apiKey = "f48e5b59a6d24a49a378f0f24ec6f767";
         const url = `https://api.spoonacular.com/recipes/complexSearch?apiKey=${apiKey}&query=${query}`;
         try {
             const response = await axios.get(url);
@@ -23,7 +19,11 @@ function Explore() {
         } catch (error) {
             console.error("Error fetching data:", error);
         }
-    };
+    }, [query]);
+
+    useEffect(() => {
+        fetchRecipes(); // Charge initialement des recettes par défaut
+    }, [fetchRecipes]);
 
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -38,12 +38,12 @@ function Explore() {
                 </div>
                 <div className="about">
                     <ul className="nav-links">
-                    <li onClick={() => navigate('/home')}>Home</li>
-                    <li onClick={() => navigate('/about')}>About</li>
-                    <li onClick={() => navigate('/explore')}>Explore</li>
-                    <li onClick={() => navigate('/personalize')}>Personalize</li>
-                    <li onClick={() => navigate('/CalorieCalculator')}>Compose</li>
-                    <li onClick={() => navigate('/contact')}>Identify</li>
+                        <li onClick={() => navigate('/home')}>Home</li>
+                        <li onClick={() => navigate('/about')}>About</li>
+                        <li onClick={() => navigate('/explore')}>Explore</li>
+                        <li onClick={() => navigate('/personalize')}>Personalize</li>
+                        <li onClick={() => navigate('/CalorieCalculator')}>Compose</li>
+                        <li onClick={() => navigate('/contact')}>Identify</li>
                     </ul>
                 </div>
                 <div className="about">
